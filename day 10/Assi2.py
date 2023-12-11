@@ -82,7 +82,7 @@ def find_loop(diagaram: list):
         prev_point, curr = curr, find_next(diagaram, curr, prev_point)
 
     for row, line in enumerate(loop_diag):
-        last_c = loop_diag[prev_point[Y]][prev_point[X]]
+        last_c = ""
         for col, tile in enumerate(line):
             if tile == "-":
                 loop_diag[row][col] = "P"
